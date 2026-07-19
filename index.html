@@ -7,6 +7,54 @@
   <title>For My Babe ❤️</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Dancing+Script:wght@700&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+  <style>
+    #scene {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      z-index: -1;
+    }
+
+    .scroll-container {
+      position: relative;
+      z-index: 2;
+      background: transparent;
+    }
+
+    .panel.message {
+      margin-top: 100vh;
+    }
+
+    .message-section {
+      display: none;
+    }
+
+    .message-section.active {
+      display: block;
+    }
+
+    .nav-arrows {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 1rem;
+    }
+
+    .nav-arrows button {
+      background: rgba(255, 255, 255, 0.2);
+      border: none;
+      padding: 0.5rem 1rem;
+      color: #fff;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .panel.final {
+      margin-bottom: 5rem;
+    }
+  </style>
 </head>
 
 <body>
@@ -20,6 +68,7 @@
   <canvas id="scene"></canvas>
 
   <div class="scroll-container">
+    <!-- Hero Section -->
     <section class="panel hero">
       <div class="content-box">
         <h1 class="babe-title">ADWOA CLARA</h1>
@@ -29,37 +78,49 @@
       </div>
     </section>
 
+    <!-- Message Section with flipping -->
     <section class="panel message">
       <div class="glass-card">
-        <h2 class="dancing">My Darling Adwoa Clara…</h2>
-        <p>I don’t even know how to start this the perfect way. I don’t know the perfect respectful words to use for someone like you. But I remember the very first day I saw you — at the faculty office, submitting your documents in that yellow dress. You looked so cute, and honestly, you stole my attention without even trying. I was busy searching for a pen to write my details on my folder, but you were there to help me. Although I was shy, I asked anyway… and that moment stayed with me.</p>
 
-        <p>You left earlier, and I thought maybe I’d never get the chance to talk to you the way I wanted. But fate had other plans — it brought us together again at Batama Street. That moment was wonderful. My spine was shaking, my heart was beating faster than I expected, but I still couldn’t stop looking at you. And when your friend gave me your number, it felt like history — the first time I ever got a stranger’s number, not knowing you would come to hold a place in my heart that nobody else could ever occupy.</p>
+        <!-- Section 1 -->
+        <div class="message-section active">
+          <h2 class="dancing">My Darling Adwoa Clara…</h2>
+          <p>I don’t even know how to start this the perfect way. I don’t know the perfect respectful words to use for someone like you. But I remember the very first day I saw you — at the faculty office, submitting your documents in that yellow dress...</p>
+          <p>You left earlier, and I thought maybe I’d never get the chance to talk to you the way I wanted. But fate had other plans — it brought us together again at Batama Street...</p>
+          <p>Adwoa Clara, there’s something I’ve been hiding from you. I dated before, way back in 2022. It lasted for about a year and a half, but unfortunately, she broke up with me...</p>
+        </div>
 
-        <p>Adwoa Clara, there’s something I’ve been hiding from you. I dated before, way back in 2022. It lasted for about a year and a half, but unfortunately, she broke up with me because she said she couldn’t marry someone who wasn’t a degree holder. She started university first and thought I wouldn’t be able to make it. Her name was Michell, an NSMQ contestant from Afia Kobi SHS, now a level 300 Biochemistry student at KNUST. She knew everything about me, and her words cut deep. I don’t talk about it because it hurts, especially remembering how I begged her while sick, crying like a child. Later she came back asking for forgiveness, but I never took that chance. Even though I loved her, she made me suffer.</p>
+        <!-- Section 2 -->
+        <div class="message-section">
+          <p>But thank God you came along and changed everything. You made me forget her, made me block her, and gave me a reason to smile again...</p>
+          <p>And now, Adwoa Clara, I would like to get you a new necklace — something that will still show how much you mean to me as a friend I love...</p>
+          <p>I know I’ve failed you sometimes, and I regret those moments. You never complained, but I know my faults...</p>
+        </div>
 
-        <p>But thank God you came along and changed everything. You made me forget her, made me block her, and gave me a reason to smile again. That’s why I got you the first necklace — something simple, from a friend to a female friend, something I could afford at the time, but filled with meaning. Because you became the one who mattered, the one who made me believe in love again.</p>
+        <!-- Section 3 -->
+        <div class="message-section">
+          <p>I remember telling girls who had crushes on me, or those who thought I loved them, that I already had a beautiful, cute girlfriend...</p>
+          <p>And Adwoa Clara, every time I see you rocking your dresses, I can’t help but smile. You are indeed my type...</p>
+          <p>Sometimes, some of your actions — and even the actions of others — hurt me too much. But I think it’s normal...</p>
+        </div>
 
-        <p>And now, Adwoa Clara, I would like to get you a new necklace — something that will still show how much you mean to me as a friend I love. I’m telling you this with all sincerity, and I’m hoping you won’t accept it the way you did the first one. This one is special, because it carries my gratitude, my admiration, and my wish to always see you smile.</p>
+        <!-- Section 4 -->
+        <div class="message-section">
+          <p>I know you’re with someone now, and I respect that. But I can’t hide how I feel. I wish I could be the one to hold your hands...</p>
+          <p>Even if life has taken us on different paths, I’ll never stop cherishing the moments we shared...</p>
+          <p>Forever yours in thought and in feeling… ❤️<br>From your Nana Yaw ❤️</p>
+          <div class="floating-heart">❤️</div>
+        </div>
 
-        <p>I know I’ve failed you sometimes, and I regret those moments. You never complained, but I know my faults. Not because I wanted to hurt you — I would never intentionally put you in pain. Life on campus with you was gorgeous. Even when I was stubborn, you always wanted to see me after class, just like I always wanted to see you. You’d wait for me to close from class before going home, spending time at the library just to be near me. I left you alone sometimes, and that’s something I wish I could go back and correct.</p>
-
-        <p>I remember telling girls who had crushes on me, or those who thought I loved them, that I already had a beautiful, cute girlfriend — you. They thought I was joking, but I was only telling the truth. Some even disliked me for it, but I was proud, because I wasn’t afraid to let the world know how much I loved you. Life around you was soft and sweet, and you helped me forget most of my problems.</p>
-
-        <p>And Adwoa Clara, every time I see you rocking your dresses, I can’t help but smile. You are indeed my type — the type of woman I want to spend my days with, the type I want to hold close forever. You make simple moments feel magical, and you make me believe in love more than ever.</p>
-
-        <p>Sometimes, some of your actions — and even the actions of others — hurt me too much. But I think it’s normal, because you’ll never truly get hurt if you don’t love or care. And although sometimes I complain, it’s not because I like complaining. I complain because you mean a lot to me, and I don’t want you to change. As one writer once said: <em>“Complaints are often the language of love — they show we care enough to want things better.”</em></p>
-
-        <p>I know you’re with someone now, and I respect that. But I can’t hide how I feel. I wish I could be the one to hold your hands, to love you forever, and to build the future we both deserve. I want to be the one who makes you happy now and always — the one who turns your ordinary days into something extraordinary.</p>
-
-        <p>Even if life has taken us on different paths, I’ll never stop cherishing the moments we shared. You’ll always be the one who makes my heart race, the one who taught me what it truly means to love.</p>
-
-        <p>Forever yours in thought and in feeling… ❤️</p>
-        <p>From your Nana Yaw ❤️</p>
-        <div class="floating-heart">❤️</div>
+        <!-- Navigation arrows -->
+        <div class="nav-arrows">
+          <button id="prev">← Previous</button>
+          <button id="next">Next →</button>
+        </div>
       </div>
     </section>
 
+    <!-- Final Section -->
     <section class="panel final">
       <div class="content-box">
         <h2 class="cinzel">Forever & Always</h2>
@@ -70,10 +131,28 @@
     </section>
   </div>
 
+  <!-- Scripts -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
   <script src="script.js"></script>
+
+  <script>
+    const sections = document.querySelectorAll('.message-section');
+    let current = 0;
+
+    document.getElementById('next').addEventListener('click', () => {
+      sections[current].classList.remove('active');
+      current = (current + 1) % sections.length;
+      sections[current].classList.add('active');
+    });
+
+    document.getElementById('prev').addEventListener('click', () => {
+      sections[current].classList.remove('active');
+      current = (current - 1 + sections.length) % sections.length;
+      sections[current].classList.add('active');
+    });
+  </script>
 
 </body>
 </html>
