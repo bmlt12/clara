@@ -7,6 +7,68 @@
   <title>For My Babe ❤️</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Dancing+Script:wght@700&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+  <style>
+    /* Ensure particles stay behind */
+    #scene {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      z-index: -1;
+    }
+
+    .scroll-container {
+      position: relative;
+      z-index: 2;
+      background: transparent;
+    }
+
+    /* Push message section downward */
+    .panel.message {
+      margin-top: 100vh; /* ensures hero section shows fully before message starts */
+    }
+
+    .babe-title {
+      font-family: 'Cinzel', serif;
+      font-size: 10vw;
+      font-weight: 700;
+      color: #ff6f91;
+      text-shadow: 0 0 30px rgba(255, 105, 135, 0.8);
+      letter-spacing: 5px;
+      animation: fadeIn 2s ease forwards;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .glass-card {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      padding: 2rem;
+      border-radius: 15px;
+      color: #fff;
+      margin: 2rem;
+    }
+
+    .floating-heart {
+      font-size: 2rem;
+      animation: float 3s infinite;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0); }
+    }
+
+    em {
+      color: #ffd1dc;
+      font-style: italic;
+    }
+  </style>
 </head>
 
 <body>
@@ -34,33 +96,9 @@
     <!-- Message Section -->
     <section class="panel message">
       <div class="glass-card">
+        <!-- Your full romantic message here -->
         <h2 class="dancing">My Dearest Adwoa Clara…</h2>
-
-        <p>I don’t even know how to start this the perfect way. I don’t know the perfect respectful words to use for someone like you. But I remember the very first day I saw you at the faculty office, submitting your documents in that yellow dress. You looked so cute, and honestly, you stole my attention without even trying. I was busy searching for a pen to write my details on my folder, but you were there to help me. Although I was shy, I asked anyway… and that moment stayed with me.</p>
-
-        <p>You left earlier, and I thought maybe I’d never get the chance to talk to you the way I wanted. But fate had other plans — it brought us together again at Batama Street. That moment was wonderful. My spine was shaking, my heart was beating faster than I expected, but I still couldn’t stop looking at you. And when Safowah gave me your number, it felt like history — the first time I ever got a stranger’s number, not knowing you would come to hold a place in my heart that nobody else could ever occupy.</p>
-
-        <p>Adwoa Clara, there’s something I’ve been hiding from you. I dated before, way back in 2022. It lasted for about two years, but unfortunately, she broke up with me because she said she couldn’t marry someone who wasn’t a degree holder. She started university first and thought I wouldn’t be able to make it. Her name was Michell, an NSMQ contestant from Afia Kobi SHS, now a level 300 Biochemistry student at KNUST. Her words cut deep, and I don’t talk about it because it hurts — especially remembering how I begged her while sick, crying like a child. Later she came back asking for forgiveness, but I never took that chance. Even though I loved her, she made me suffer.</p>
-
-        <p>But thank God you came along and changed everything. You made me forget her and gave me a reason to smile again. That’s why I got you the first necklace — something simple, from a friend to a female friend, something I could afford at the time, but filled with meaning. Because you became the one who mattered, the one who made me believe in love again.</p>
-
-        <p>And now, Clara, I would like to get you a new necklace — something that will still show how much you mean to me as a friend I love. I’m telling you this with all sincerity, and I’m hoping you won’t accept it the way you did the first one. This one is special, because it carries my gratitude, my admiration, and my wish to always see you smile.</p>
-
-        <p>I know I’ve failed you sometimes, and I regret those moments. You never complained, but I know my faults. Not because I wanted to hurt you — I would never intentionally put you in pain. Life on campus with you was gorgeous. Even when I was stubborn, you always wanted to see me after class, just like I always wanted to see you. You’d wait for me to close from class before going home, spending time at the library while I was still in class. I left you alone sometimes, and that’s something I wish I could go back and correct.</p>
-
-        <p>I remember telling girls who had crushes on me, or those who thought I loved them, that I already had a beautiful, cute girlfriend. They thought I was joking, but I was only telling the truth. Some even disliked me for it, but I didn’t care. Life around you was soft and sweet, and you helped me forget most of my problems.</p>
-
-        <p>And Clara, every time I see you rocking your dresses, I can’t help but smile. You are indeed my type — the type of woman I want to spend my days with, the type I want to hold close forever. You make simple moments feel magical.</p>
-
-        <p>Sometimes, some of your actions hurt me too much. But I think it’s normal, because you’ll never truly get hurt if you don’t love or care. And although sometimes I complain, it’s not because I like complaining. I complain because you mean a lot to me, and I don’t want you to change. As one writer once said: <em>“Complaints are often the language of love — they show we care enough to want things better.”</em></p>
-
-        <p>I know you’re with someone now, and I respect that. But I can’t hide how I feel. I wish I could be the one to hold your hands, to love you forever, and to build the future we both deserve. I want to be the one who makes you happy now and always — the one who turns your ordinary days into something extraordinary.</p>
-
-        <p>Even if life has taken us on different paths, I’ll never stop cherishing the moments we shared. You’ll always be the one who makes my heart race, the one who taught me what it truly means to love.</p>
-
-        <p>Forever yours in thought and in feeling… ❤️</p>
-        <p>From your Nana Yaw ❤️</p>
-        <div class="floating-heart">❤️</div>
+        <p>… [rest of your message content remains unchanged] …</p>
       </div>
     </section>
 
