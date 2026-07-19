@@ -74,16 +74,3 @@ body, html {
     100% { transform: scale(1); }
 }
 
-.babe-title {
-  font-size: 10vw; /* scales with screen width */
-}
-
-@media (max-width: 600px) {
-  .babe-title {
-    font-size: 14vw; /* slightly larger on small screens */
-  }
-  .glass-card {
-    padding: 1rem; /* tighter padding for mobile */
-    font-size: 0.9rem;
-  }
-}
